@@ -8,7 +8,7 @@ import { selectBook } from '../actions/index';
 import { bindActionCreators } from 'redux';
 
 class BookList extends Component {
-  // onClick, onChange, ... all from CommonJS
+  // onClick, onChange, ... all from VanillaJS
   renderList() {
     return this.props.books.map((book) => {
       return (
