@@ -23,7 +23,7 @@ class BookList extends Component {
   }
   render() {
     return (
-      <ul classNmae="list-group col-sm-4">
+      <ul className="list-group col-sm-4">
         {this.renderList()}
       </ul>
     )
@@ -46,6 +46,7 @@ function mapDispatchToProps(dispatch) {
   // Whenever selectBook is called, the result should be passed to all of our reducers
   // selectBook is actual action creator
   // dispatch is a function that takes all these actions and, like funnel, it spits them back out to all the different reducers in our application
+  // the purpose of bindActionCreators is to send action automaitcally to all reducers
   return bindActionCreators({ selectBook: selectBook }, dispatch);
 }
 
